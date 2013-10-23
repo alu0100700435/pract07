@@ -1,6 +1,6 @@
 # Clase Fractiom
 
-require "lpp/lib/gcd"
+require "gcd.rb"
 
 class Fraction
   attr_reader :num, :den
@@ -8,13 +8,12 @@ class Fraction
   
   def initalize(num, den)
     
-    common = gcd(num, den)
+    com = gcd(num, den)
     
-    @num = num / common
+    @num = num / com
     
-    if (num > 0)
-      @den = den / common
-    end
+    @den = den / com
+   
   end
 #   def num() 
 #     @num
