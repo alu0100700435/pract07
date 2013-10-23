@@ -12,7 +12,48 @@ class Fraction
   end
   
   def =(den)
-    @den = den
+   if (den != 0)
+     @den = den
+  end
+  
+  def +(other)
+  end
+  
+  def -(other)
+  end
+  
+  def *(other)
+  end
+  
+  def \(other)
+  end
+  
+  def %
+    @num % @den
+  end
+  
+  def abs
+  end
+  
+  def -@
+  end
+  
+  def rep
+  end
+  
+  def ==(other)
+  end
+  
+  def <(other)
+  end
+  
+  def >(other)
+  end
+  
+  def <=(other)
+  end
+  
+  def >=(other)
   end
   
 end

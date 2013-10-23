@@ -4,6 +4,7 @@ class Fraction
   attr_reader :num, :den
   
   def initalize(num, den)
+    @num, @den = num, den
   end
   
   def =(num)
@@ -11,9 +12,25 @@ class Fraction
   end
   
   def =(den)
-    @den = den
+   if (den != 0)
+     @den = den
   end
   
+  def +(other)
+  end
+  
+  def -(other)
+  end
+  
+  def *(other)
+  end
+  
+  def \(other)
+  end
+  
+  def %
+    @num % @den
+  end
 end
   
   
