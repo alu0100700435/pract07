@@ -33,9 +33,11 @@ class Fraction
   end
   
   def *(other)
+    Fraction.new(@num * other.num, @den *other.den)
   end
   
   def \(other)
+    Fraction.new(@num * other.den, @den *other.num)
   end
   
   def %
