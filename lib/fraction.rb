@@ -52,7 +52,8 @@ class Fraction
     Fraction.new(@num * -1, @den)
   end
   
-  def rep
+  def reciprocal
+    Fraction.new(@den, @num)
   end
   
   def ==(other)
