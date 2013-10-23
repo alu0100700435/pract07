@@ -49,6 +49,7 @@ class Fraction
   end
   
   def -@
+    Fraction.new(@num * -1, @den)
   end
   
   def rep

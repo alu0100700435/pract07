@@ -45,6 +45,7 @@ class Fraction
   end
   
   def abs
+    Fraction.new(@num.abs, @den.abs)
   end
   
   def -@
