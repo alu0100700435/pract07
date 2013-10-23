@@ -31,6 +31,31 @@ class Fraction
   def %
     @num % @den
   end
+  
+  def abs
+  end
+  
+  def -@
+  end
+  
+  def rep
+  end
+  
+  def ==(other)
+  end
+  
+  def <(other)
+  end
+  
+  def >(other)
+  end
+  
+  def <=(other)
+  end
+  
+  def >=(other)
+  end
+  
 end
   
   

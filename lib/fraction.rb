@@ -1,7 +1,10 @@
 # Clase Fractiom
 
+require gcd
+
 class Fraction
   attr_reader :num, :den
+  
   
   def initalize(num, den)
     @num, @den = num, den
@@ -42,6 +45,11 @@ class Fraction
   end
   
   def ==(other)
+    if(@num == other.num) && (@den == other.den)
+      true
+    else
+      false
+    end
   end
   
   def <(other)
