@@ -1,6 +1,6 @@
 # Clase Fractiom
 
-require gcd
+require "lpp/lib/gcd"
 
 class Fraction
   attr_reader :num, :den
