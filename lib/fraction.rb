@@ -12,7 +12,7 @@ class Fraction
     
     @num = num / common
     
-    if (num !=0)
+    if (num > 0)
       @den = den / common
     end
   end
