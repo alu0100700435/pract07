@@ -3,16 +3,14 @@
 require "gcd.rb"
 
 class Fraction
-  attr_reader :num, :den
+  attr_accessor :num, :den
   
   
-  def initalize(num, den)
+  def initialize(num, den)
     
     com = gcd(num, den)
     
-    @num = num / com
-    
-    @den = den / com
+    @num, @den =  num / com , den / com
    
   end
 #   def num() 
