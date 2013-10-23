@@ -8,6 +8,6 @@ task :default => :test
 
 desc "Ejecutar tests"
 task :test do
-        sh "rspec spec/spec_fraction.rb --format documentation"
+        sh "rspec spec/fraction_spec.rb --format documentation"
 
 end
