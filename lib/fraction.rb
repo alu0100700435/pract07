@@ -63,18 +63,12 @@ class Fraction
     end
   end
   
-  def <(other)
+  def <=>(other)    
+    to_float <=> other.to_float    
   end
   
-  def >(other)
-  end
   
-  def <=(other)
-  end
-  
-  def >=(other)
-  end
-  
+   
 end
   
   
