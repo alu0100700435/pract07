@@ -1,20 +1,23 @@
 # Clase Fractiom
 
+require gcd
+
 class Fraction
   attr_reader :num, :den
   
+  
   def initalize(num, den)
-    @num, @den = num, den
+    
+    common = gcd(num, den)
+    
+    @num = num / common
+    
+    if (num !=0)
+      @den = den / common
+    end
   end
   
-  def =(num)
-    @num = num
-  end
-  
-  def =(den)
-   if (den != 0)
-     @den = den
-  end
+ 
   
   def +(other)
   end
@@ -42,6 +45,11 @@ class Fraction
   end
   
   def ==(other)
+    if(@num == other.num) && (@den == other.den)
+      true
+    else
+      false
+    end
   end
   
   def <(other)

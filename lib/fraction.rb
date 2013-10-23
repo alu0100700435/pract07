@@ -7,17 +7,24 @@ class Fraction
   
   
   def initalize(num, den)
-    @num, @den = num, den
+    
+    common = gcd(num, den)
+    
+    @num = num / common
+    
+    if (num !=0)
+      @den = den / common
+    end
   end
   
-  def =(num)
-    @num = num
+  def to_s
+    "#{@num}/#{@den}"
   end
-  
-  def =(den)
-   if (den != 0)
-     @den = den
+
+  def to_f
+    @num.to_f/@den.to_f
   end
+ 
   
   def +(other)
   end
