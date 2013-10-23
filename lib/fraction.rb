@@ -17,11 +17,11 @@ class Fraction
     end
   end
   
-  def to_s
+  def to_string
     "#{@num}/#{@den}"
   end
 
-  def to_f
+  def to_float
     @num.to_f/@den.to_f
   end
  
