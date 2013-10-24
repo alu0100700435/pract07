@@ -1,28 +1,27 @@
 # Clase Fractiom
 
-require "lpp/gcd"
+require "gcd.rb"
 
 class Fraction
-  attr_reader :num, :den
   
+  attr_accessor :num, :den  
   
-  def initalize(num, den)
+  def initialize(num, den)
     
-    common = gcd(num, den)
+    com = gcd(num, den)
     
-    @num = num / common
-    
-    if (num > 0)
-      @den = den / common
-    end
+    @num, @den =  num/com , den/com
+   
   end
-#   def num() 
-#     @num
-#   end
-# 
-#   def den()
-#     @den
-#   end
+  
+  def num() 
+    @num
+  end
+
+  def den()
+    @den
+  end
+  
 #   
 #   def to_string()
 #     "#{@num}/#{@den}"
