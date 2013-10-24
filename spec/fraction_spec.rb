@@ -48,29 +48,36 @@ describe Fraction do
   end
   
   describe "#Multiplicacion de fracciones" do
-    it "Multiplicacion de f1 y f2 numerador" do
+    it "Multiplicacion de f1 y f2, numerador" do
       @f1.*(@f2).num.should eq(1)
     end
-    it "Multiplicacion de f1 y f2 denominador" do
+    it "Multiplicacion de f1 y f2, denominador" do
       @f1.*(@f2).den.should eq(6)
     end
   end
   
-   describe "#Division de fracciones" do
-    it "Division de f1 y f2 numerador" do
+  describe "#Division de fracciones" do
+    it "Division de f1 y f2, numerador" do
       @f1./(@f2).num.should eq(3)
     end
-    it "Division de f1 y f2 denominador" do
+    it "Division de f1 y f2, denominador" do
       @f1./(@f2).den.should eq(8)
     end
   end
   
   describe "#Valor absoluto de fracciones" do
-    it "Valor absoluto de f1 numerador" do
+    it "Valor absoluto de f1, numerador" do
       @f1.abs().num.should eq(1)
     end
-    it "Valor absoluto de f1 denominador" do
+    it "Valor absoluto de f1, denominador" do
       @f1.abs().den.should eq(4)
+    end
+  end
+  
+  describe "#Opuesto de fracciones" do
+    it "Opuesto de f1, numerador" do
+      @f1.-@().num.should eq(-1)
+      @f1.-@().den.should eq(4)
     end
   end
 end
