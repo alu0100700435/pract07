@@ -49,11 +49,11 @@ class Fraction
 #   def %()
 #     @num % @den
 #   end
-#   
-#   def abs()
-#     Fraction.new(@num.abs, @den.abs)
-#   end
-#   
+  
+   def abs()
+     Fraction.new(@num.abs, @den.abs)
+   end
+  
 #   def -@
 #     Fraction.new(@num * -1, @den)
 #   end
