@@ -22,7 +22,6 @@ class Fraction
     @den
   end
   
-#   
 #   def to_string()
 #     "#{@num}/#{@den}"
 #   end
