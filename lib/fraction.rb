@@ -70,8 +70,8 @@ class Fraction
     end
   end
   
-#   def <=>(other)    
-#     to_float <=> other.to_float    
-#   end
-#      
+  def <=>(other)    
+    to_float <=> other.to_float    
+  end
+      
 end
