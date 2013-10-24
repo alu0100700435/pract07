@@ -92,9 +92,16 @@ describe Fraction do
     end
   end
   
-  describe "#Comparacion de fracciones" do
+  describe "#Comparacion de igualdad de fracciones" do
     it "Comparacion de f1 y f2" do
       @f1.==(@f2).should eq(false)
+    end
+
+  end
+  
+  describe "#Comparaciones" do
+    it "Comparacion de f1 y f2" do
+      @f1.==(@f2).should eq(<)
     end
 
   end
