@@ -5,6 +5,7 @@ describe Fraction do
   before :each do
     @f1 = Fraction.new(1,4) 
     @f2 = Fraction.new(4,6)
+    @f3 = Fraction.new(4,7)
   end
 
 
@@ -116,8 +117,8 @@ describe Fraction do
   
   describe "#Modulo de 2 fracciones" do
     it "modulo de f1 y f2" do
-      @f1.%(@f2).num.should eq(37)
-      @f1.%(@f2).den.should eq(100)
+      @f3.%(@f2).num.should eq(12)
+      @f3.%(@f2).den.should eq(1)
     end
 
   end

@@ -46,9 +46,11 @@ class Fraction
     Fraction.new(@num * other.den, @den *other.num)
   end
   
-#   def %()
-#     @num % @den
-#   end
+  def %(other)
+    a = to_float(@num, other.den)
+    b = to_float(@den, other.num)
+     Fraction.new((a%b)*100,100)
+  end
   
   def abs()
      Fraction.new(@num.abs, @den.abs)
@@ -74,13 +76,13 @@ class Fraction
     to_float() < other.to_float()    
   end
   def >(other)    
-    to_float() < other.to_float()    
+    to_float() > other.to_float()    
   end
   def <=(other)    
-    to_float() < other.to_float()    
+    to_float() <= other.to_float()    
   end
   def >=(other)    
-    to_float() < other.to_float()    
+    to_float() >= other.to_float()    
   end
       
 end

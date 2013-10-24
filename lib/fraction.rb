@@ -47,9 +47,9 @@ class Fraction
   end
   
   def %(other)
-    a = to_float(@num, other.den)
-    b = to_float(@den, other.num)
-     Fraction.new((a*b)*100,100)
+    a = (@num*other.den).to_f
+    b = (@den * other.num).to_f
+     Fraction.new((a%b)*100,100)
   end
   
   def abs()
