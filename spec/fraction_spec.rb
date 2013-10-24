@@ -46,6 +46,12 @@ describe Fraction do
       @f1.to_float().should eq(0.25)
     end
   end
+  
+  describe "#Multiplicacion de fracciones" do
+    it "Multiplicacion de f1 y f2" do
+      @f1.*(@f2).should eq(1,6)
+    end
+  end
 end
 
 
