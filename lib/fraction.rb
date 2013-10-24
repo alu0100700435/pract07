@@ -45,14 +45,14 @@ class Fraction
   def /(other)
     Fraction.new(@num * other.den, @den *other.num)
   end
-#   
+  
 #   def %()
 #     @num % @den
 #   end
   
-   def abs()
+  def abs()
      Fraction.new(@num.abs, @den.abs)
-   end
+  end
   
   def -@()
     Fraction.new(@num * -1, @den)
@@ -70,8 +70,17 @@ class Fraction
     end
   end
   
-  def <=>(other)    
-    to_float <=> other.to_float    
+  def <(other)    
+    to_float() < other.to_float()    
+  end
+  def >(other)    
+    to_float() > other.to_float()    
+  end
+  def <=(other)    
+    to_float() <= other.to_float()    
+  end
+  def >=(other)    
+    to_float() >= other.to_float()    
   end
       
 end

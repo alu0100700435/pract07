@@ -100,10 +100,18 @@ describe Fraction do
   end
   
   describe "#Comparaciones" do
-    it "Comparacion de f1 y f2" do
-      @f1.==(@f2).should eq(<)
+    it "Comparacion < de f1 y f2" do
+      @f1.<(@f2).should eq(true)
     end
-
+    it "Comparacion > de f1 y f2" do
+      @f1.>(@f2).should eq(false)
+    end
+    it "Comparacion <= de f1 y f2" do
+      @f1.<=(@f2).should eq(true)
+    end
+    it "Comparacion >= de f1 y f2" do
+      @f1.>=(@f2).should eq(false)
+    end
   end
 end
 
