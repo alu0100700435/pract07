@@ -32,6 +32,14 @@ describe Fraction do
     end
   end
   
+  describe "#Mostrar en string" do
+    it "String de la fraccion 1" do
+      @f1.to_string().should eq("1/4")
+    end
+    it "String de la fraccion 2" do
+      @f2.to_string().should eq("2/3")
+    end
+  end
 end
 
 
