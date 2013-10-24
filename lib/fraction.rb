@@ -3,23 +3,25 @@
 require "gcd.rb"
 
 class Fraction
-  attr_accessor :num, :den
   
+  attr_accessor :num, :den  
   
   def initialize(num, den)
     
     com = gcd(num, den)
     
-    @num, @den =  num / com , den / com
+    @num, @den =  num/com , den/com
    
   end
-#   def num() 
-#     @num
-#   end
-# 
-#   def den()
-#     @den
-#   end
+  
+  def num() 
+    @num
+  end
+
+  def den()
+    @den
+  end
+  
 #   
 #   def to_string()
 #     "#{@num}/#{@den}"
