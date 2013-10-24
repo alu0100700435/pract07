@@ -135,11 +135,10 @@ describe Fraction do
   
   describe "#Modulo de 2 fracciones" do
     it "modulo de f1 y f2" do
-      @f3.%(@f2).num.should eq(12)
-      @f3.%(@f2).den.should eq(1)
+      @f3.%(@f2).should eq(24)    
     end
-
   end
+  
 end
 
 
