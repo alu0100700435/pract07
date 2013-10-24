@@ -26,10 +26,10 @@ class Fraction
     "#{@num}/#{@den}"
   end
  
-#   def to_float()
-#     flotante =@num.to_f/@den.to_f
-#     flotante
-#   end
+   def to_float()
+     flotante =@num.to_f/@den.to_f
+     flotante
+   end
 #  
 #   
 #   def +(other)
