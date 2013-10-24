@@ -93,12 +93,10 @@ describe Fraction do
   end
   
   describe "#Comparacion de fracciones" do
-    it "Comparacion del numerador" do
+    it "Comparacion de f1 y f2" do
       @f1.==(@f2).should eq(false)
     end
-#      it "Comparacion del denominador" do
-#       @f1.==(@f2).den.should eq(false)
-#     end
+
   end
 end
 
