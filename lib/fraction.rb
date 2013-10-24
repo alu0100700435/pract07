@@ -50,7 +50,7 @@ class Fraction
   def %(other)
     a = (@num*other.den).to_f
     b = (@den * other.num).to_f
-     Fraction.new((a%b)*100,100)
+    c = a%b
   end
   
   def abs()
