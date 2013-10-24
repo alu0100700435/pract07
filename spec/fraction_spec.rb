@@ -55,6 +55,15 @@ describe Fraction do
       @f1.*(@f2).den.should eq(6)
     end
   end
+  
+   describe "#Division de fracciones" do
+    it "Division de f1 y f2 numerador" do
+      @f1./(@f2).num.should eq(3)
+    end
+    it "Division de f1 y f2 denominador" do
+      @f1./(@f2).den.should eq(8)
+    end
+  end
 end
 
 
