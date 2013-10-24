@@ -113,6 +113,14 @@ describe Fraction do
       @f1.>=(@f2).should eq(false)
     end
   end
+  
+  describe "#Modulo de 2 fracciones" do
+    it "modulo de f1 y f2" do
+      @f1.%(@f2).num.should eq(37)
+      @f1.%(@f2).den.should eq(100)
+    end
+
+  end
 end
 
 
