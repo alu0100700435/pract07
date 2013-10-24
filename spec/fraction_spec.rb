@@ -64,6 +64,15 @@ describe Fraction do
       @f1./(@f2).den.should eq(8)
     end
   end
+  
+  describe "#Valor absoluto de fracciones" do
+    it "Valor absoluto de f1 numerador" do
+      @f1.abs().num.should eq(1)
+    end
+    it "Valor absoluto de f1 denominador" do
+      @f1.abs().den.should eq(4)
+    end
+  end
 end
 
 
