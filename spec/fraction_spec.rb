@@ -91,6 +91,15 @@ describe Fraction do
       @f2.reciprocal().den.should eq(2)
     end
   end
+  
+  describe "#Comparacion de fracciones" do
+    it "Comparacion del numerador" do
+      @f1.==(@f2).should eq(false)
+    end
+#      it "Comparacion del denominador" do
+#       @f1.==(@f2).den.should eq(false)
+#     end
+  end
 end
 
 

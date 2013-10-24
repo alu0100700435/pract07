@@ -54,22 +54,22 @@ class Fraction
      Fraction.new(@num.abs, @den.abs)
    end
   
-  def -@
+  def -@()
     Fraction.new(@num * -1, @den)
   end
    
-#   def reciprocal()
-#     Fraction.new(@den, @num)
-#   end
-#   
-#   def ==(other)
-#     if(@num == other.num) && (@den == other.den)
-#       true
-#     else
-#       false
-#     end
-#   end
-#   
+   def reciprocal()
+     Fraction.new(@den, @num)
+   end
+   
+  def ==(other)
+    if(@num == other.num) 
+      true
+    else
+      false
+    end
+  end
+  
 #   def <=>(other)    
 #     to_float <=> other.to_float    
 #   end
