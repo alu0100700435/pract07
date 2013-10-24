@@ -51,6 +51,7 @@ class Fraction
     a = (@num*other.den).to_f
     b = (@den * other.num).to_f
     c = a%b
+    c
   end
   
   def abs()
