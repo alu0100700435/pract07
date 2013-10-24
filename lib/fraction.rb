@@ -32,11 +32,12 @@ class Fraction
    end
   
    def +(other)
-     Fraction.new(@num* other.den + other.num*@den, @den * other.den)
+    Fraction.new(@num* other.den + other.num*@den, @den * other.den)
    end
    
-#   def -(other)
-#   end
+  def -(other)
+    Fraction.new(@num* other.den - other.num*@den, @den * other.den)
+  end
  
   def *(other)
      Fraction.new(@num * other.num, @den *other.den)

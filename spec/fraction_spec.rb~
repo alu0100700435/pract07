@@ -48,6 +48,24 @@ describe Fraction do
     end
   end
   
+  describe "#Suma de fracciones" do
+    it "Suma de f1 y f2, numerador" do
+      @f1.+(@f2).num.should eq(11)
+    end
+    it "Suma de f1 y f2, denominador" do
+      @f1.+(@f2).den.should eq(12)
+    end
+  end
+  
+  describe "#Resta de fracciones" do
+    it "Resta de f1 y f2, numerador" do
+      @f1.+(@f2).num.should eq(-5)
+    end
+    it "Resta de f1 y f2, denominador" do
+      @f1.+(@f2).den.should eq(12)
+    end
+  end
+
   describe "#Multiplicacion de fracciones" do
     it "Multiplicacion de f1 y f2, numerador" do
       @f1.*(@f2).num.should eq(1)
@@ -117,7 +135,7 @@ describe Fraction do
   
   describe "#Modulo de 2 fracciones" do
     it "modulo de f1 y f2" do
-      @f3.%(@f2).num.should eq(24)
+      @f3.%(@f2).num.should eq(12)
       @f3.%(@f2).den.should eq(1)
     end
 
