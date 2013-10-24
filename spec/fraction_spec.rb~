@@ -40,6 +40,21 @@ describe Fraction do
       @f2.to_string().should eq("2/3")
     end
   end
+  
+  describe "#Mostrar en float" do
+    it "Float de la fraccion 1" do
+      @f1.to_float().should eq(0.25)
+    end
+  end
+  
+  describe "#Multiplicacion de fracciones" do
+    it "Multiplicacion de f1 y f2 denominador" do
+      @f1.*(@f2).num.should eq(1)
+    end
+    it "Multiplicacion de f1 y f2 denominador" do
+      @f1.*(@f2).den.should eq(6)
+    end
+  end
 end
 
 
