@@ -31,10 +31,10 @@ class Fraction
      flotante
    end
   
-#   def +(other)
-#     Fraction.new(@num* other.den + other.num*@den, @den * other.den)
-#   end
-#   
+   def +(other)
+     Fraction.new(@num* other.den + other.num*@den, @den * other.den)
+   end
+   
 #   def -(other)
 #   end
  
