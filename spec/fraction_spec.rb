@@ -40,6 +40,12 @@ describe Fraction do
       @f2.to_string().should eq("2/3")
     end
   end
+  
+  describe "#Mostrar en float" do
+    it "Float de la fraccion 1" do
+      @f1.to_float().should eq(0.25)
+    end
+  end
 end
 
 
