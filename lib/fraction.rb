@@ -30,19 +30,18 @@ class Fraction
      flotante =@num.to_f/@den.to_f
      flotante
    end
-#  
-#   
+  
 #   def +(other)
 #     Fraction.new(@num* other.den + other.num*@den, @den * other.den)
 #   end
 #   
 #   def -(other)
 #   end
-#   
-#   def *(other)
-#     Fraction.new(@num * other.num, @den *other.den)
-#   end
-#   
+ 
+  def *(other)
+     Fraction.new(@num * other.num, @den *other.den)
+  end
+  
 #   def \(other)
 #     Fraction.new(@num * other.den, @den *other.num)
 #   end
