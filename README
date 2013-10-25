@@ -1,1 +1,71 @@
-Practica 6 -TDD fraccion 
+PRACTICA 6 - Test-driven development 
+
+Autoras: Raquel Álvarez Hernández y Carlota Lázaro Hernández
+
+Class Fraction:
+
+1. Inicialización:
+
+Para la inicialización de las variables se tiene en cuenta si el denominador es o no negativo.
+Si éste es negativo, se le cambio de signo al igual que al numerador, para así evitar errores aritméticos, sobre todo en la suma y la resta.
+Como la fracción ha de estar en su forma reducida, se halla el máximo común divisor del numerador y denominador, y el resultado del m.c.d se le divide al denominador y numerador.
+
+2. Suma y resta de fracciones:
+
+En términos no numéricos una suma es el resultado de lo siguiente:
+
+	a/b + c/d = a*d/b*d + c*b/b*d 
+
+Por ellos, al realizar la suma en el programa creado, se creará una fracción donde el nuevo numerador será:
+	a*d + c*b
+Y el denominador
+	b*d
+Sin importar que este reducida, ya que al crearse se reducirá.
+
+Por otro lado la resta será exactamente igual cambiando el signo + por el -.
+
+3. Multiplicación de fracciones:
+
+En términos no numéricos una  multiplicación es el resultado de lo siguiente:
+	
+	a/b * c/d = a*c/b*d
+Entonces al crear la nueva fracción que da el resultado, se creará de tal forma:
+Numerador:
+    a*c
+Denominador:
+    b*d
+
+4. División de fracciones:
+
+En términos no numéricos una  multiplicación es el resultado de lo siguiente:
+	
+	a/b * c/d = a*d/b*c
+Entonces al crear la nueva fracción que da el resultado, se creará de tal forma:
+Numerador:
+    a*d
+Denominador:
+    b*c
+    
+5. Módulo de dos fracciones:
+
+El módulo de dos fracciones es el resto de la división, basándonos en lo anterior sobre la división tenemos que:
+ a*d / b*c = e con resto x, donde x es lo mismo que (a*d)%(b*c), donde siempre dará un número natural.
+
+6. Reciproco de un número:
+
+El reciproco de un número es otro número que al multiplicarlo te de la unidad, es decir:
+  Supuesto:
+   1/2 --> reciproco = 2 --> 1/2 * 2 = 1
+Entonces para el programa creado se creará una fracción donde el numerador será el denominador y el denominador el numerador.
+
+7. Valor absoluto de un número:
+
+El valor absoluto es pasar un numero a positivo
+
+8. Opuesto de un número:
+
+El opuesto de un número es tan sencillo como negar ese número, por ello en este programa solo se negará el numerador.
+
+9. Comparaciones:
+
+Las comparaciones se realizan como siempre, pero para comparar las fracciones en este programa, se comparan en float. 
