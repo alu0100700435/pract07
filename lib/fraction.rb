@@ -9,9 +9,11 @@ class Fraction
   def initialize(num, den)
     
     com = gcd(num, den)
-    
-    @num, @den =  num/com , den/com
-   
+    if (den < 0)
+      @num, @den =  ((-1*num)/com), ((-1*den)/com)
+    else 
+      @num, @den =  num/com, den/com
+    end
   end
   
   def num() 
