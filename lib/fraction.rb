@@ -68,6 +68,10 @@ class Fraction
      Fraction.new(@den, @num)
    end
    
+   def reciprocal_div(other)
+     Fraction.new( @den *other.num, @num * other.den)
+   end
+   
   def ==(other)
     if(@num == other.num) && (@den == other.den)
       true
