@@ -1,4 +1,6 @@
 task :default => :lib
+task :default => :spec
+task :default => :thtml
 
 desc "Espectativas de la clase fraccion"
 task :lib do
