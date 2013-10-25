@@ -68,7 +68,7 @@ class Fraction
      Fraction.new(@den, @num)
    end
    
-   def reciprocal_div()
+   def reciprocal_div(other)
      Fraction.new( @den *other.num, @num * other.den)
    end
    
