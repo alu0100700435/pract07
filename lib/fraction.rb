@@ -50,8 +50,8 @@ class Fraction
   end
   
   def %(other)
-    a = (@num*other.den).to_f
-    b = (@den * other.num).to_f
+    a = (@num*other.den)
+    b = (@den * other.num)
     c = a%b
     c
   end

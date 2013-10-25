@@ -9,10 +9,9 @@ class Fraction
   def initialize(num, den)
     
     com = gcd(num, den)
-    if (@den < 0)
+    if (den < 0)
       @num, @den =  ((-1*num)/com), ((-1*den)/com)
-    end
-    if (@den > 0)
+    else 
       @num, @den =  num/com, den/com
     end
   end
@@ -22,12 +21,7 @@ class Fraction
   end
 
   def den()
-    if (@den < 0)
-    -1*@den
-    end
-    if (@den > 0)
-      @den
-    end
+    @den
   end
   
   def to_string()
