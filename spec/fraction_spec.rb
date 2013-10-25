@@ -111,6 +111,13 @@ describe Fraction do
     end
   end
   
+  describe "#Reciproco de la division de dos fracciones" do
+    it "Reciproco de f1/f2" do
+      @f1.reciprocal_div(@f2).num.should eq(8)
+      @f1.reciprocal_div(@f2).den.should eq(3)
+    end
+  end
+  
   describe "#Comparacion de igualdad de fracciones" do
     it "Comparacion de f1 y f2" do
       @f1.==(@f2).should eq(false)
