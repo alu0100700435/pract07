@@ -1,4 +1,4 @@
-PRACTICA 6 - Test-driven development 
+PRACTICA 7 - Test-driven development 
 
 Autoras: Raquel Álvarez Hernández y Carlota Lázaro Hernández
 
@@ -69,3 +69,7 @@ El opuesto de un número es tan sencillo como negar ese número, por ello en est
 9. Comparaciones:
 
 Las comparaciones se realizan como siempre, pero para comparar las fracciones en este programa, se comparan en float. 
+
+Pruebas rspect con travis.
+
+Se obtuvieron unos pequeños fallos con el building de travis ya que el rake estaba mal configurado, por ello hemos cambiado algunas cosas para que finalmente las construcciones en los buildings diesen correctamente. 
