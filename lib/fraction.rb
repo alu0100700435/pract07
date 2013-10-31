@@ -26,11 +26,11 @@ class Fraction
     @den
   end
   
-  def to_string()
+  def to_s()
     "#{@num}/#{@den}"
   end
  
-   def to_float()
+   def to_f()
      flotante =@num.to_f/@den.to_f
      flotante
    end
