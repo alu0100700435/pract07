@@ -1,6 +1,8 @@
-# Clase Fractiom
+# Clase Fraction
 
 require "gcd.rb"
+
+include Comparable
 
 class Fraction
   
@@ -71,26 +73,9 @@ class Fraction
    def reciprocal_div(other)
      Fraction.new( @den *other.num, @num * other.den)
    end
-   
-  def ==(other)
-    if(@num == other.num) && (@den == other.den)
-      true
-    else
-      false
-    end
-  end
-  
-  def <(other)    
-    to_float() < other.to_float()    
-  end
-  def >(other)    
-    to_float() > other.to_float()    
-  end
-  def <=(other)    
-    to_float() <= other.to_float()    
-  end
-  def >=(other)    
-    to_float() >= other.to_float()    
-  end
-      
+    
+   def <=>(other)    
+     to_float() <=> other.to_float()    
+   end
+        
 end
