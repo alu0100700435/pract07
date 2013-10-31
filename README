@@ -70,6 +70,6 @@ El opuesto de un número es tan sencillo como negar ese número, por ello en est
 
 Las comparaciones se realizan como siempre, pero para comparar las fracciones en este programa, se comparan en float. 
 
-Pruebas rspect con travis.
+Pruebas rspect y travis.
 
 Se obtuvieron unos pequeños fallos con el building de travis ya que el rake estaba mal configurado, por ello hemos cambiado algunas cosas para que finalmente las construcciones en los buildings diesen correctamente. 
